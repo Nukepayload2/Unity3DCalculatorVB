@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{097F54D9-9BC8-4C2E-A455-B78B1CB4AB5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>Assembly-VisualBasic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <VBRuntime>Embed</VBRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>Assets\Plugins\</OutputPath>
+    <DocumentationFile>Assembly-VisualBasic.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <DefineConstants>UNITY_5_3_OR_NEWER,UNITY_5_4_OR_NEWER,UNITY_5_5_OR_NEWER,UNITY_5_5_0,UNITY_5_5,UNITY_5,ENABLE_AUDIO,ENABLE_CACHING,ENABLE_CLOTH,ENABLE_DUCK_TYPING,ENABLE_GENERICS,ENABLE_MICROPHONE,ENABLE_MULTIPLE_DISPLAYS,ENABLE_PHYSICS,ENABLE_SPRITERENDERER_FLIPPING,ENABLE_SPRITES,ENABLE_TERRAIN,ENABLE_RAKNET,ENABLE_UNET,ENABLE_LZMA,ENABLE_UNITYEVENTS,ENABLE_WEBCAM,ENABLE_WWW,ENABLE_CLOUD_SERVICES_COLLAB,ENABLE_CLOUD_SERVICES_ADS,ENABLE_CLOUD_HUB,ENABLE_CLOUD_PROJECT_ID,ENABLE_CLOUD_SERVICES_UNET,ENABLE_CLOUD_SERVICES_BUILD,ENABLE_CLOUD_LICENSE,ENABLE_EDITOR_METRICS,ENABLE_EDITOR_METRICS_CACHING,INCLUDE_DYNAMIC_GI,INCLUDE_GI,PLATFORM_SUPPORTS_MONO,RENDER_SOFTWARE_CURSOR,INCLUDE_PUBNUB,ENABLE_PLAYMODE_TESTS_RUNNER,ENABLE_SCRIPTING_NEW_CSHARP_COMPILER,UNITY_STANDALONE_WIN,UNITY_STANDALONE,ENABLE_SUBSTANCE,ENABLE_RUNTIME_GI,ENABLE_MOVIES,ENABLE_NETWORK,ENABLE_CRUNCH_TEXTURE_COMPRESSION,ENABLE_UNITYWEBREQUEST,ENABLE_CLOUD_SERVICES,ENABLE_CLOUD_SERVICES_ANALYTICS,ENABLE_CLOUD_SERVICES_PURCHASING,ENABLE_CLOUD_SERVICES_CRASH_REPORTING,ENABLE_EVENT_QUEUE,ENABLE_CLUSTERINPUT,ENABLE_VIDEO,ENABLE_VR,ENABLE_WEBSOCKET_HOST,ENABLE_MONO,ENABLE_PROFILER,UNITY_ASSERTIONS,UNITY_EDITOR,UNITY_EDITOR_64,UNITY_EDITOR_WIN,UNITY_TEAM_LICENSE,CROSS_PLATFORM_INPUT</DefineConstants>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>Assets\Plugins\</OutputPath>
+    <DocumentationFile>Assembly-VisualBasic.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Cecil, Version=0.9.6.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files\Unity\Editor\Data\Managed\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEditor, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files\Unity\Editor\Data\Managed\UnityEditor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files\Unity\Editor\Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\ExpressionCalculator.vb" />
+    <Compile Include="Assets\MainSceneBehaviorBase.Designer.vb">
+      <DependentUpon>MainSceneBehaviorBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Assets\MainSceneBehaviorBase.vb" />
+    <Compile Include="Assets\TextExtensions.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
